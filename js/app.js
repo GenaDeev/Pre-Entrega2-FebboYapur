@@ -14,6 +14,7 @@ const impuestos = [
   },
 ];
 
+// Hilo principal
 const form = () => {
   montoImpuestos = 0;
   alert("Vamos a calcular el precio final con impuestos de tu compra en USD!");
@@ -21,6 +22,7 @@ const form = () => {
   alert(calculate(value, cotizacion));
 };
 
+// Funcion que recibe el valor en USD y la cotizacion del dolar oficial y devuelve un string con el precio final en ARS con impuestos detallados
 const calculate = (value, cotizacion) => {
   if (!value) {
     alert("Debes ingresar un valor");
